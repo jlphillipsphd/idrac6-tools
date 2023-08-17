@@ -32,11 +32,11 @@ docker run -it --rm -v ${PWD}:/mnt idrac6-tools:trusty /bin/bash
 
 ###  Upload new private key
 ```
-racadm -r my.server.org -i sslkeyupload -t 1 -f /mnt/myidrac.key
+idracadm -r my.server.org -i sslkeyupload -t 1 -f /mnt/myidrac.key
 ```
 
 ### Upload new certificate: use cert (w/ issuer) version of the cert...
 ```
-racadm -r my.server.org -i sslcertupload -t 1 -f /mnt/myidrac.pem
+idracadm -r my.server.org -i sslcertupload -t 1 -f /mnt/myidrac.pem
 ```
 
